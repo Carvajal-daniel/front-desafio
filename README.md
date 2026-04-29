@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💻 Frontend - Controle de Ponto
 
-## Getting Started
+Interface web desenvolvida para consumo da API de controle de ponto.
 
-First, run the development server:
+## 🚀 Tecnologias
+
+* Next.js
+* TypeScript
+* React
+
+## ▶️ Como rodar o projeto
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação ficará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔗 Integração com a API
 
-## Learn More
+O frontend consome a API de controle de ponto para:
 
-To learn more about Next.js, take a look at the following resources:
+* Cadastro de colaboradores
+* Registro de ponto
+* Visualização de históricos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+As requisições estão centralizadas em `services/api.ts`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📂 Estrutura
 
-## Deploy on Vercel
+* `app/` → rotas e páginas da aplicação
+* `components/` → componentes reutilizáveis
+* `services/` → comunicação com a API
+* `lib/` → utilitários e funções auxiliares
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💡 Observações
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* O projeto utiliza o App Router do Next.js
+* Estrutura organizada para facilitar manutenção e leitura
+* Foco em simplicidade e funcionalidade (MVP)
+
+## 📌 Considerações
+
+O objetivo foi construir uma interface simples e funcional, permitindo interação completa com a API.
